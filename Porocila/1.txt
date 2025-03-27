@@ -1,0 +1,105 @@
+
+# NAČRT RAZVOJA - POROČILO
+
+## 1. DEFINICIJA PROBLEMA
+
+### 1.1 Opis problema
+Trg kriptovalut je izjemno dinamičen in zahteva nenehno spremljanje tržnih gibanj, novic in razpoloženja na družbenih omrežjih. Zaradi velike količine informacij, ki vplivajo na vrednost kriptovalut, vlagatelji pogosto težko sprejemajo optimalne odločitve v realnem času.
+
+Problem torej izhaja iz realnega sveta, saj vlagatelji v kriptovalute potrebujejo avtomatizirane analize, napovedi in opozorila za hitre odločitve. Cilj je razviti sistem, ki bo sposoben zbirati podatke iz različnih virov, jih analizirati ter uporabniku podati priporočila.
+
+Večagentni sistemi omogočajo porazdeljeno in avtonomno obdelavo podatkov ter učinkovito reševanje kompleksnih problemov. Naš projekt razvija večagentni sistem za avtomatsko spremljanje, analizo in napovedovanje tržnih gibanj v svetu kriptovalut. Cilj sistema je uporabnikom zagotoviti natančne, pravočasne in personalizirane vpoglede ter priporočila za naložbene odločitve.
+
+Sistem bo sestavljen iz več inteligentnih agentov, ki bodo med seboj sodelovali:
+- Agent za zbiranje podatkov: Pridobivanje podatkov z uporabo Web Scraping iz različnih virov, kot so kripto borze, novice, družbena omrežja in analitični portali.
+- Agent za analizo podatkov: Uporablja obdelavo naravnega jezika (NLP) za analizo novic in družbenih omrežij ter identificira ključne trende.
+- Priporočilni agent: Na podlagi zbranih in analiziranih podatkov oceni tveganja ter oblikuje priporočila za naložbene odločitve. 
+- Agent za avtomatsko trgovanje: glede na priporočila kupi/proda kripto
+
+S to rešitvijo želimo vlagateljem olajšati spremljanje kripto trga, zmanjšati potrebo po ročnem analiziranju informacij ter izboljšati njihovo sposobnost sprejemanja informiranih odločitev.
+
+**Matematična formulacija problema:**
+
+Naj bo 
+- $P = \lbrace p_1, p_2, ..., p_n \rbrace$ množica kriptovalut.
+- Cena vsake kriptovalute $p_i$ v trenutku $t$ je določena s funkcijo $C(p_i, t)$, ki vrača trenutno vrednost.
+- $A = \lbrace A_1, A_2, ..., A_m \rbrace$ množica agentov, kjer ima vsak agent $A_k$ svojo obdelovalno funkcijo $f_k$ 
+- Vsak agent obdeluje podatke in vrača rezultat $R_k = f_k(D)$, kjer je $D$ množica vhodnih podatkov, ki lahko vključuje cene, novice in druge dejavnike.
+- Končna odločitev uporabnika $D_u$ temelji na agregiranih rezultatih vseh agentov: $D_u = g(R_1, R_2, ... R_m)$, kjer je $g$ funkcija, ki združuje priporočila in vpliva na investicijsko strategijo.
+
+### 1.2 Ključne besede 
+- Večagentni sistemi (MAS)
+- Kriptovalute
+- Analiza podatkov
+- Strojno učenje
+- NLP
+- Avtomatsko trgovanje
+- Reševalni sistem
+- Priporočilni sistem
+- Evaluacija uspešnosti
+
+## 2. PREGLED SORODNIH DEL
+
+Za analizo večagentnih sistemov in njihove uporabe v financah ter trgovanju smo pregledali naslednje vire:
+- https://arxiv.org/abs/2412.20138
+- https://arxiv.org/abs/2502.13165
+- http://www.ir.juit.ac.in:8080/jspui/handle/123456789/9865
+
+Za posameznega agenta pa smo kot koristne izbrali naslednje vire:
+- Web scraping
+	- https://www.researchgate.net/profile/Marco-Scarno/publication/322520038_Use_of_Artificial_Intelligence_And_Web_Scraping_Methods_To_Retrieve_Information_From_The_World_Wide_Web/links/5a5dd0deaca272d4a3deab3a/Use-of-Artificial-Intelligence-And-Web-Scraping-Methods-To-Retrieve-Information-From-The-World-Wide-Web.pdf?__cf_chl_tk=tIdmcia0vzqg4tXzrgZ1bfGN5otzPERW8GJJBPvUwjs-1741898749-1.0.1.1-GSZn6HhUDj_Rx_d8lW3y0cRHVGXu8j0BA_90oRp7npg
+	- https://www.researchgate.net/publication/379024314_Enhancing_Web_Scraping_with_Artificial_Intelligence_A_Review
+	- https://ecocyb.ase.ro/nr2024_3/9_BogdanStefanPosedaru_LorenaBatagan.pdf
+- NLP
+	- https://www.researchgate.net/publication/381213328_LLMs_and_NLP_Models_in_Cryptocurrency_Sentiment_Analysis_A_Comparative_Classification_Study
+	- https://github.com/Applied-AI-Research-Lab/LLM-and-NLP-models-in-Cryptocurrency-Sentiment-Analysis
+	- https://arxiv.org/pdf/2204.10185
+	- https://www.mdpi.com/2227-7390/11/16/3441
+- Razvoj priporočilnega sistema
+	- https://www.mdpi.com/2076-3417/10/4/1506
+	- https://ieeexplore.ieee.org/abstract/document/9731057
+- Bot za avtomatsko kupovanje
+	- https://www.theseus.fi/handle/10024/510408
+	- https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394230952.ch8
+
+## 3. PREGLED EVALUACIJE REŠITVE
+### 3.1 Kvantitativne metode
+Za oceno uspešnosti sistema bomo uporabili kvantitativne metode. Ključni kriteriji evaluacije vključujejo:
+- *Natančnost napovedi:* Primerjava priporočil sistema z dejanskimi tržnimi gibanji:
+	- natančnost, povprečna absolutna napaka (MAE) in srednja kvadratna napaka (RMSE) za oceno učinkovitosti napovedi cen kriptovalut.
+- *Hitrost obdelave:* Časovna učinkovitost zbiranja podatkov, analize in podajanja priporočil uporabniku.
+- *Stabilnost sistema:* Ocenjevanje robustnosti in odpornosti sistema na velike količine podatkov in ekstremne tržne dogodke.
+- _Primerjava donosnosti:_ Analiza, ki temelji na priporočilih sistema, v primerjavi z referenčnimi strategijami (HODL, klasične tehnične analize) = profitabilnost, Sharpe ratio
+
+### 3.2 Eksperimentalni scenariji
+- _Backtesting:_ Preverjanje delovanja priporočil na zgodovinskih podatkih in ocena njihove učinkovitosti v različnih tržnih pogojih.
+- _Real-time testiranje:_ Implementacija sistema v omejenem okolju z dejanskimi tržnimi podatki za preverjanje praktične uporabnosti.
+- _Obremenitveni testi:_ Testiranje sistema pri različnih obremenitvah (npr. hitre spremembe trga, nenadne rasti podatkov).
+
+## 4. NAČRT REŠITVE
+
+- **Člani skupine (S3):** Andraž Podpečan, Simon Plazar, Lucijan Hrastnik in Lea Roj.
+- **Povezava do repozitorija na github-u:**
+	- https://github.com/Potipecan/Cryptorio
+	- https://github.com/Lea-roj/Cryptorio
+- **Programski jezik:** Python
+
+### 4.1 Opravila potrebna za implementacijo projekta
+1. Razvoj agenta za zbiranje podatkov
+	- Implementacija web-crawlerja.
+	- Pridobivanje podatkov iz API-jev kripto borz in družbenih omrežij.
+2. Razvoj agenta za analizo podatkov
+	- Uporaba NLP metod za analizo mnenj iz novic in družbenih omrežij.
+	- Implementacija modelov strojnega učenja za prepoznavanje trendov.
+3. Razvoj priporočilnega sistema
+	- Implementacija algoritmov za oceno tveganja in oblikovanje priporočil.
+	- Testiranje različnih strategij trgovanja in prilagoditev modela.
+4. Bot za avtomatsko kupovanje
+	- Implementacija agenta za avtomatsko kupovanje in prodajanje kripto glede na priporočilni sistem
+5. Razvoj obveščanja uporabnikov
+	- Implementacija sistema za pošiljanje obvestil (e-pošta, Discord, API notifikacije).
+	- Prilagoditev uporabniškega vmesnika za prikaz rezultatov.
+6. Testiranje in optimizacija sistema
+	- Backtesting na zgodovinskih podatkih.
+	- Real-time testiranje in primerjava z referenčnimi strategijami.
+	- Izboljšave na podlagi uporabniških povratnih informacij.

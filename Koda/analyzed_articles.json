@@ -1,0 +1,350 @@
+[
+    {
+        "entities": [
+            [
+                "South Korean",
+                "NORP"
+            ],
+            [
+                "three-month",
+                "DATE"
+            ],
+            [
+                "Upbit",
+                "EXCHANGE"
+            ],
+            [
+                "Financial Intelligence Unit (FIU",
+                "ORG"
+            ],
+            [
+                "FIU",
+                "ORG"
+            ],
+            [
+                "February 25",
+                "DATE"
+            ],
+            [
+                "South Korea’s",
+                "GPE"
+            ],
+            [
+                "Dunamu",
+                "PERSON"
+            ],
+            [
+                "March 27",
+                "DATE"
+            ],
+            [
+                "Newsis",
+                "ORG"
+            ],
+            [
+                "30 days",
+                "DATE"
+            ],
+            [
+                "2017",
+                "DATE"
+            ],
+            [
+                "recent months",
+                "DATE"
+            ],
+            [
+                "October 2023",
+                "DATE"
+            ],
+            [
+                "the Financial Services Commission",
+                "ORG"
+            ],
+            [
+                "FSC",
+                "ORG"
+            ],
+            [
+                "KYC",
+                "ORG"
+            ],
+            [
+                "as many as 600,000",
+                "CARDINAL"
+            ],
+            [
+                "2018",
+                "DATE"
+            ],
+            [
+                "45,000",
+                "CARDINAL"
+            ],
+            [
+                "Last week",
+                "DATE"
+            ],
+            [
+                "Bithumb",
+                "EXCHANGE"
+            ],
+            [
+                "one",
+                "CARDINAL"
+            ],
+            [
+                "The Seoul Southern District Prosecutors’ Office",
+                "ORG"
+            ],
+            [
+                "Bithumb’s",
+                "ORG"
+            ],
+            [
+                "Yeoksam",
+                "GPE"
+            ],
+            [
+                "3 billion Korean won",
+                "MONEY"
+            ],
+            [
+                "approximately $2.4 million",
+                "MONEY"
+            ],
+            [
+                "Seongsu",
+                "GPE"
+            ],
+            [
+                "Kim Dae-sik",
+                "PERSON"
+            ],
+            [
+                "Last year",
+                "DATE"
+            ],
+            [
+                "15 million",
+                "CARDINAL"
+            ],
+            [
+                "the Bank of Korea",
+                "ORG"
+            ],
+            [
+                "15.59 million",
+                "CARDINAL"
+            ],
+            [
+                "South Koreans",
+                "NORP"
+            ],
+            [
+                "five",
+                "CARDINAL"
+            ],
+            [
+                "the end of November",
+                "DATE"
+            ],
+            [
+                "4.7 trillion won",
+                "MONEY"
+            ],
+            [
+                "$3.2 billion",
+                "MONEY"
+            ],
+            [
+                "October",
+                "DATE"
+            ],
+            [
+                "8.8 trillion won",
+                "MONEY"
+            ],
+            [
+                "$6.03 billion",
+                "MONEY"
+            ],
+            [
+                "November",
+                "DATE"
+            ]
+        ],
+        "vader_sentiment": {
+            "scores": {
+                "neg": 0.075,
+                "neu": 0.86,
+                "pos": 0.065,
+                "compound": -0.6597
+            },
+            "label": "negative"
+        },
+        "bert_sentiment": [
+            {
+                "label": "negative",
+                "score": 0.9660906791687012
+            },
+            {
+                "label": "negative",
+                "score": 0.7176981568336487
+            },
+            {
+                "label": "negative",
+                "score": 0.5418428778648376
+            },
+            {
+                "label": "neutral",
+                "score": 0.6474483609199524
+            },
+            {
+                "label": "neutral",
+                "score": 0.9628177285194397
+            },
+            {
+                "label": "positive",
+                "score": 0.8318353891372681
+            },
+            {
+                "label": "neutral",
+                "score": 0.9989092350006104
+            }
+        ],
+        "bert_sentiment_summary": "negative",
+        "topics": [
+            [
+                "fiu",
+                "suspension",
+                "cryptocurrency",
+                "court",
+                "korean",
+                "crypto",
+                "korea",
+                "exchanges",
+                "south",
+                "upbit"
+            ]
+        ],
+        "top_keywords_tfidf": [
+            "upbit",
+            "south",
+            "exchanges"
+        ],
+        "id": "doc_1"
+    },
+    {
+        "entities": [
+            [
+                "Bitcoin",
+                "CRYPTO"
+            ],
+            [
+                "$70,000 mark",
+                "MONEY"
+            ],
+            [
+                "Goldman Sachs",
+                "ORG"
+            ],
+            [
+                "Fidelity",
+                "ORG"
+            ],
+            [
+                "100,000",
+                "MONEY"
+            ],
+            [
+                "the end of the year",
+                "DATE"
+            ],
+            [
+                "the United States",
+                "GPE"
+            ],
+            [
+                "april",
+                "DATE"
+            ],
+            [
+                "El Salvador",
+                "GPE"
+            ],
+            [
+                "European",
+                "NORP"
+            ],
+            [
+                "Tesla",
+                "ORG"
+            ],
+            [
+                "Square",
+                "PERSON"
+            ],
+            [
+                "2021",
+                "DATE"
+            ],
+            [
+                "Sarah Kim",
+                "PERSON"
+            ],
+            [
+                "CryptoMarkets",
+                "ORG"
+            ]
+        ],
+        "vader_sentiment": {
+            "scores": {
+                "neg": 0.02,
+                "neu": 0.845,
+                "pos": 0.135,
+                "compound": 0.9821
+            },
+            "label": "positive"
+        },
+        "bert_sentiment": [
+            {
+                "label": "positive",
+                "score": 0.9999990463256836
+            },
+            {
+                "label": "positive",
+                "score": 0.9999997615814209
+            },
+            {
+                "label": "positive",
+                "score": 0.9998421669006348
+            },
+            {
+                "label": "positive",
+                "score": 0.9999995231628418
+            }
+        ],
+        "bert_sentiment_summary": "positive",
+        "topics": [
+            [
+                "long",
+                "market",
+                "past",
+                "new",
+                "recently",
+                "term",
+                "crypto",
+                "investors",
+                "major",
+                "bitcoin"
+            ]
+        ],
+        "top_keywords_tfidf": [
+            "bitcoin",
+            "major",
+            "investors"
+        ],
+        "id": "doc_2"
+    }
+]
