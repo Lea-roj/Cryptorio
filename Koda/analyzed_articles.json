@@ -214,6 +214,8 @@
             }
         ],
         "bert_sentiment_summary": "negative",
+        "entity_sentiment": {},
+        "crypto_scores": {},
         "topics": [
             [
                 "fiu",
@@ -326,6 +328,16 @@
             }
         ],
         "bert_sentiment_summary": "positive",
+        "entity_sentiment": {
+            "Bitcoin": {
+                "sentiment": "positive",
+                "confidence": 1.0,
+                "mentions": 8
+            }
+        },
+        "crypto_scores": {
+            "Bitcoin": 1.5
+        },
         "topics": [
             [
                 "long",

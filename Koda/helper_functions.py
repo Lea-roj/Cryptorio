@@ -130,6 +130,8 @@ def analyze_text(text):
     entities = extract_entities(text)
     vader_scores, vader_label = vader_sentiment(text)
     bert_scores = bert_sentiment_chunks_finance(text)
+    entity_sentiments = entity_level_sentiment(text, entities)
+    crypto_scores = score_cryptos(entity_sentiments)
 
     overall = Counter([s['label'] for s in bert_scores])
     most_common = overall.most_common(1)[0][0]
@@ -139,9 +141,61 @@ def analyze_text(text):
 
     return {
         "entities": entities,
-        "vader_sentiment": {"scores": vader_scores, "label": vader_label},
+        "vader_sentiment": {
+            "scores": vader_scores,
+            "label": vader_label
+        },
         "bert_sentiment": bert_scores,
         "bert_sentiment_summary": most_common,
+        "entity_sentiment": entity_sentiments,
+        "crypto_scores": crypto_scores,
         "topics": topics,
         "top_keywords_tfidf": top_keywords
     }
+
+
+def entity_level_sentiment(text, entities):
+    entity_sentiments = {}
+    sentences = list(nlp(text).sents)
+
+    for name, label in entities:
+        if label != "CRYPTO":
+            continue
+
+        all_sentences_where_entity_is_mentioned = [sent.text for sent in sentences if name in sent.text]
+
+        if not all_sentences_where_entity_is_mentioned:
+            continue
+
+        combined = " ".join(all_sentences_where_entity_is_mentioned)
+        sentiment_results = bert_sentiment_chunks_finance(combined)
+
+        overall_label = Counter([r["label"] for r in sentiment_results]).most_common(1)[0][0]
+        avg_conf = np.mean([r["score"] for r in sentiment_results])
+
+        entity_sentiments[name] = {
+            "sentiment": overall_label,
+            "confidence": round(avg_conf, 4),
+            "mentions": len(all_sentences_where_entity_is_mentioned)
+        }
+
+    return entity_sentiments
+
+
+def score_cryptos(entity_sentiment):
+    score_map = {}
+    for name, data in entity_sentiment.items():
+        label = data["sentiment"]
+        conf = data["confidence"]
+        mention_boost = min(0.1 * data["mentions"], 0.5)
+
+        sentiment_weight = {
+            "positive": 1,
+            "neutral": 0.2,
+            "negative": -1
+        }[label]
+
+        score = round((sentiment_weight * conf) + mention_boost, 4)
+        score_map[name] = score
+
+    return dict(sorted(score_map.items(), key=lambda x: x[1], reverse=True))
