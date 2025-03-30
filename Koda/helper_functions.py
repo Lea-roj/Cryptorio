@@ -35,40 +35,34 @@ def preprocess_text(text):
     return ' '.join(text.split())
 
 
-def is_crypto(name):
-    with open("api_lists/crypto_list.json", "r", encoding="utf-8") as f:
-        crypto_names = set(json.load(f))
-
-    return name.strip() in crypto_names
-
-
-def get_custom_label(name):
-    with open("api_lists/crypto_list.json", "r", encoding="utf-8") as f:
-        crypto_names = set(json.load(f))
-
-    with open("api_lists/exchange_list.json", "r", encoding="utf-8") as f:
-        exchange_names = set(json.load(f))
-
-    name_clean = name.strip()
-    if name_clean in crypto_names:
-        return "CRYPTO"
-    elif name_clean in exchange_names:
-        return "EXCHANGE"
-    else:
-        return None
-
-
-def extract_entities(text):
+def extract_entities(text, tfidf_keywords):
     doc = nlp(text)
     entity_map = {}
 
+    with open("api_lists/full_crypto_list.json", "r", encoding="utf-8") as f:
+        crypto_data = json.load(f)
+    with open("api_lists/exchange_list.json", "r", encoding="utf-8") as f:
+        exchange_names = set(name.lower() for name in json.load(f))
+
+    crypto_names_and_symbols = set()
+    for coin in crypto_data:
+        crypto_names_and_symbols.add(coin["name"].lower())
+        crypto_names_and_symbols.add(coin["symbol"].lower())
+
     for ent in doc.ents:
         name = ent.text.strip()
-        custom_label = get_custom_label(name)
-        label = custom_label if custom_label else ent.label_
+        name_lower = name.lower()
 
-        if name not in entity_map or custom_label:
-            entity_map[name] = label
+        if len(name_lower) < 2:
+            continue
+
+        if name_lower in crypto_names_and_symbols:
+            if len(name_lower) <= 4 or name_lower in tfidf_keywords:
+                entity_map[name] = "CRYPTO"
+        elif name_lower in exchange_names:
+            entity_map[name] = "EXCHANGE"
+        else:
+            entity_map[name] = ent.label_
 
     return list(entity_map.items())
 
@@ -127,7 +121,9 @@ def topic_modeling(texts, n_topics=1):
 def analyze_text(text):
     text = preprocess_text(text)
 
-    entities = extract_entities(text)
+    top_keywords = get_top_tfidf_keywords(text, top_n=10)
+    entities = extract_entities(text, top_keywords)
+
     vader_scores, vader_label = vader_sentiment(text)
     bert_scores = bert_sentiment_chunks_finance(text)
     entity_sentiments = entity_level_sentiment(text, entities)
@@ -137,7 +133,6 @@ def analyze_text(text):
     most_common = overall.most_common(1)[0][0]
 
     topics = topic_modeling([text])
-    top_keywords = get_top_tfidf_keywords(text)
 
     return {
         "entities": entities,

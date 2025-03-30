@@ -49,7 +49,7 @@
                 ],
                 [
                     "API",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "90 days",
@@ -65,7 +65,7 @@
                 ],
                 [
                     "LUNA",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "over $41 billion to $6 million",
@@ -73,7 +73,7 @@
                 ],
                 [
                     "SEC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Combined",
@@ -86,10 +86,6 @@
                 [
                     "CoinDesk",
                     "PRODUCT"
-                ],
-                [
-                    "solana",
-                    "PERSON"
                 ],
                 [
                     "1,000",
@@ -138,11 +134,29 @@
                     "sentiment": "neutral",
                     "confidence": 0.9281,
                     "mentions": 5
+                },
+                "API": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9742,
+                    "mentions": 1
+                },
+                "LUNA": {
+                    "sentiment": "negative",
+                    "confidence": 0.9998,
+                    "mentions": 1
+                },
+                "SEC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9999,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
                 "Terra": 0.6856,
-                "Luna": 0.3736
+                "Luna": 0.3736,
+                "SEC": 0.3,
+                "API": 0.2948,
+                "LUNA": -0.8998
             },
             "topics": [
                 [
@@ -161,10 +175,17 @@
             "top_keywords_tfidf": [
                 "claims",
                 "terra",
-                "luna"
+                "luna",
+                "coindesk",
+                "read",
+                "tied",
+                "terraform",
+                "submit",
+                "collapsed",
+                "case"
             ]
         },
-        "timestamp": "2025-03-29T21:07:56.131766+00:00"
+        "timestamp": "2025-03-30T10:18:38.022330+00:00"
     },
     {
         "title": "Bitcoin Miner MARA Starts Massive $2B Stock Sale Plan to Buy More BTC",
@@ -184,7 +205,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "the U.S. Securities and Exchange Commission",
@@ -192,11 +213,11 @@
                 ],
                 [
                     "SEC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ATM",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Barclays",
@@ -223,10 +244,6 @@
                     "CARDINAL"
                 ],
                 [
-                    "second",
-                    "ORDINAL"
-                ],
-                [
                     "506,137",
                     "CARDINAL"
                 ],
@@ -245,10 +262,6 @@
                 [
                     "CoinDesk",
                     "PRODUCT"
-                ],
-                [
-                    "solana",
-                    "PERSON"
                 ],
                 [
                     "1,000",
@@ -291,8 +304,28 @@
                 }
             ],
             "bert_sentiment_summary": "neutral",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.803,
+                    "mentions": 3
+                },
+                "SEC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9999,
+                    "mentions": 1
+                },
+                "ATM": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9978,
+                    "mentions": 2
+                }
+            },
+            "crypto_scores": {
+                "BTC": 0.4606,
+                "ATM": 0.3996,
+                "SEC": 0.3
+            },
             "topics": [
                 [
                     "coindesk",
@@ -310,10 +343,17 @@
             "top_keywords_tfidf": [
                 "bitcoin",
                 "market",
-                "miner"
+                "miner",
+                "strategy",
+                "mara",
+                "open",
+                "offering",
+                "mining",
+                "btc",
+                "coindesk"
             ]
         },
-        "timestamp": "2025-03-29T21:07:56.846473+00:00"
+        "timestamp": "2025-03-30T10:18:38.844247+00:00"
     },
     {
         "title": "FTX to Begin $11.4B Creditor Payouts in May After Years-Long Bankruptcy Battle",
@@ -325,7 +365,7 @@
             "entities": [
                 [
                     "FTX",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Sam Bankman-Fried",
@@ -358,10 +398,6 @@
                 [
                     "2022",
                     "DATE"
-                ],
-                [
-                    "first",
-                    "ORDINAL"
                 ],
                 [
                     "May 30",
@@ -408,10 +444,6 @@
                     "PRODUCT"
                 ],
                 [
-                    "solana",
-                    "PERSON"
-                ],
-                [
                     "1,000",
                     "MONEY"
                 ],
@@ -448,8 +480,16 @@
                 }
             ],
             "bert_sentiment_summary": "neutral",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "FTX": {
+                    "sentiment": "negative",
+                    "confidence": 0.9948,
+                    "mentions": 7
+                }
+            },
+            "crypto_scores": {
+                "FTX": -0.4948
+            },
             "topics": [
                 [
                     "payments",
@@ -467,10 +507,17 @@
             "top_keywords_tfidf": [
                 "ftx",
                 "creditors",
-                "claims"
+                "claims",
+                "crypto",
+                "cash",
+                "bankruptcy",
+                "coindesk",
+                "financial",
+                "reported",
+                "payments"
             ]
         },
-        "timestamp": "2025-03-29T21:07:57.528560+00:00"
+        "timestamp": "2025-03-30T10:18:39.570209+00:00"
     },
     {
         "title": "Why Is the Crypto Market Down Today? Bitcoin Drops to $82K as Traders Flee Risk Assets Amid Macro Worries",
@@ -486,7 +533,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "around 3%",
@@ -498,15 +545,15 @@
                 ],
                 [
                     "XRP",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "BNB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "SOL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "between 4% and 5%",
@@ -598,11 +645,11 @@
                 ],
                 [
                     "PAXG",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "XAUT",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "0.7%",
@@ -635,10 +682,6 @@
                 [
                     "CoinDesk",
                     "PRODUCT"
-                ],
-                [
-                    "solana",
-                    "PERSON"
                 ],
                 [
                     "1,000",
@@ -681,8 +724,46 @@
                 }
             ],
             "bert_sentiment_summary": "negative",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "BTC": {
+                    "sentiment": "negative",
+                    "confidence": 0.9994,
+                    "mentions": 3
+                },
+                "XRP": {
+                    "sentiment": "negative",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "BNB": {
+                    "sentiment": "negative",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SOL": {
+                    "sentiment": "negative",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "PAXG": {
+                    "sentiment": "neutral",
+                    "confidence": 0.997,
+                    "mentions": 2
+                },
+                "XAUT": {
+                    "sentiment": "positive",
+                    "confidence": 0.8302,
+                    "mentions": 1
+                }
+            },
+            "crypto_scores": {
+                "XAUT": 0.9302,
+                "PAXG": 0.3994,
+                "BTC": -0.6994,
+                "XRP": -0.9,
+                "BNB": -0.9,
+                "SOL": -0.9
+            },
             "topics": [
                 [
                     "market",
@@ -700,10 +781,17 @@
             "top_keywords_tfidf": [
                 "coindesk",
                 "data",
-                "cd20"
+                "cd20",
+                "period",
+                "year",
+                "cryptocurrency",
+                "btc",
+                "cryptocurrencies",
+                "24",
+                "market"
             ]
         },
-        "timestamp": "2025-03-29T21:07:58.374633+00:00"
+        "timestamp": "2025-03-30T10:18:40.395154+00:00"
     },
     {
         "title": "Where All the SEC Cases Are",
@@ -723,7 +811,7 @@
                 ],
                 [
                     "one",
-                    "CARDINAL"
+                    "CRYPTO"
                 ],
                 [
                     "U.S.",
@@ -751,7 +839,7 @@
                 ],
                 [
                     "SEC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Thursday",
@@ -787,7 +875,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "20",
@@ -795,7 +883,7 @@
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "the Association of Cryptocurrency Journalists",
@@ -838,8 +926,34 @@
                 }
             ],
             "bert_sentiment_summary": "neutral",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "one": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9919,
+                    "mentions": 2
+                },
+                "SEC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9892,
+                    "mentions": 1
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                }
+            },
+            "crypto_scores": {
+                "one": 0.3984,
+                "BTC": 0.3,
+                "ETH": 0.3,
+                "SEC": 0.2978
+            },
             "topics": [
                 [
                     "uyeda",
@@ -857,10 +971,17 @@
             "top_keywords_tfidf": [
                 "securities",
                 "cases",
-                "crypto"
+                "crypto",
+                "coindesk",
+                "sec",
+                "months",
+                "policy",
+                "cryptocurrency",
+                "mark",
+                "uyeda"
             ]
         },
-        "timestamp": "2025-03-29T21:07:59.124286+00:00"
+        "timestamp": "2025-03-30T10:18:41.161100+00:00"
     },
     {
         "title": "Bitcoin Plunges Below $84K after $115B Sell-Off Wipes Out Weekly Gains",
@@ -880,7 +1001,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "just below $88,000",
@@ -911,23 +1032,11 @@
                     "PERCENT"
                 ],
                 [
-                    "Avalanche",
-                    "CRYPTO"
-                ],
-                [
-                    "Polygon",
-                    "CRYPTO"
-                ],
-                [
                     "POL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "NEAR",
-                    "ORG"
-                ],
-                [
-                    "Uniswap",
                     "CRYPTO"
                 ],
                 [
@@ -947,12 +1056,8 @@
                     "ORG"
                 ],
                 [
-                    "Ethereum",
-                    "CRYPTO"
-                ],
-                [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "6%",
@@ -1000,11 +1105,11 @@
                 ],
                 [
                     "MSTR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "day",
-                    "DATE"
+                    "CRYPTO"
                 ],
                 [
                     "10%",
@@ -1016,7 +1121,7 @@
                 ],
                 [
                     "COIN",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "7.7%",
@@ -1065,10 +1170,6 @@
                 [
                     "April 2",
                     "DATE"
-                ],
-                [
-                    "Trump",
-                    "CRYPTO"
                 ],
                 [
                     "today",
@@ -1140,7 +1241,7 @@
                 ],
                 [
                     "SOL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -1188,27 +1289,37 @@
             ],
             "bert_sentiment_summary": "negative",
             "entity_sentiment": {
-                "Avalanche": {
+                "BTC": {
+                    "sentiment": "negative",
+                    "confidence": 1.0,
+                    "mentions": 7
+                },
+                "POL": {
                     "sentiment": "negative",
                     "confidence": 1.0,
                     "mentions": 1
                 },
-                "Polygon": {
+                "NEAR": {
                     "sentiment": "negative",
                     "confidence": 1.0,
                     "mentions": 1
                 },
-                "Uniswap": {
+                "ETH": {
+                    "sentiment": "negative",
+                    "confidence": 0.9998,
+                    "mentions": 3
+                },
+                "MSTR": {
                     "sentiment": "negative",
                     "confidence": 1.0,
                     "mentions": 1
                 },
-                "Ethereum": {
+                "day": {
                     "sentiment": "negative",
-                    "confidence": 0.9999,
-                    "mentions": 1
+                    "confidence": 1.0,
+                    "mentions": 6
                 },
-                "Trump": {
+                "COIN": {
                     "sentiment": "negative",
                     "confidence": 1.0,
                     "mentions": 1
@@ -1222,16 +1333,24 @@
                     "sentiment": "neutral",
                     "confidence": 0.8569,
                     "mentions": 1
+                },
+                "SOL": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
+                "SOL": 0.3,
                 "2025": 0.2714,
+                "BTC": -0.5,
+                "day": -0.5,
+                "ETH": -0.6998,
                 "Bitcoin": -0.6999,
-                "Ethereum": -0.8999,
-                "Avalanche": -0.9,
-                "Polygon": -0.9,
-                "Uniswap": -0.9,
-                "Trump": -0.9
+                "POL": -0.9,
+                "NEAR": -0.9,
+                "MSTR": -0.9,
+                "COIN": -0.9
             },
             "topics": [
                 [
@@ -1250,10 +1369,17 @@
             "top_keywords_tfidf": [
                 "btc",
                 "crypto",
-                "market"
+                "market",
+                "000",
+                "day",
+                "week",
+                "price",
+                "bitcoin",
+                "economic",
+                "coindesk"
             ]
         },
-        "timestamp": "2025-03-29T21:08:01.589761+00:00"
+        "timestamp": "2025-03-30T10:18:42.405964+00:00"
     },
     {
         "title": "President Trump Pardons Arthur Hayes, BitMEX and 3 Other Co-Founders and Employee",
@@ -1269,7 +1395,7 @@
                 ],
                 [
                     "BitMEX",
-                    "EXCHANGE"
+                    "CRYPTO"
                 ],
                 [
                     "U.S.",
@@ -1312,10 +1438,6 @@
                     "ORG"
                 ],
                 [
-                    "first",
-                    "ORDINAL"
-                ],
-                [
                     "the White House",
                     "ORG"
                 ],
@@ -1332,10 +1454,6 @@
                     "ORG"
                 ],
                 [
-                    "three",
-                    "CARDINAL"
-                ],
-                [
                     "Dwyer",
                     "PERSON"
                 ],
@@ -1349,7 +1467,7 @@
                 ],
                 [
                     "four",
-                    "CARDINAL"
+                    "CRYPTO"
                 ],
                 [
                     "last year",
@@ -1445,15 +1563,11 @@
                 ],
                 [
                     "FTX",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Sam Bankman-Fried",
                     "PERSON"
-                ],
-                [
-                    "Tucker Carlson",
-                    "CRYPTO"
                 ],
                 [
                     "Binance",
@@ -1494,10 +1608,6 @@
                 [
                     "HDR",
                     "ORG"
-                ],
-                [
-                    "Cheyenne",
-                    "CRYPTO"
                 ],
                 [
                     "Houston",
@@ -1549,7 +1659,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "20",
@@ -1557,7 +1667,7 @@
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "the Association of Cryptocurrency Journalists",
@@ -1617,26 +1727,44 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
+                "BitMEX": {
+                    "sentiment": "negative",
+                    "confidence": 0.8604,
+                    "mentions": 6
+                },
                 "Trump": {
                     "sentiment": "neutral",
                     "confidence": 0.9663,
                     "mentions": 7
                 },
-                "Tucker Carlson": {
+                "four": {
+                    "sentiment": "negative",
+                    "confidence": 0.7173,
+                    "mentions": 2
+                },
+                "FTX": {
                     "sentiment": "negative",
                     "confidence": 0.9824,
                     "mentions": 1
                 },
-                "Cheyenne": {
+                "BTC": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
-                    "mentions": 2
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
                 "Trump": 0.6933,
-                "Cheyenne": 0.4,
-                "Tucker Carlson": -0.8824
+                "BTC": 0.3,
+                "ETH": 0.3,
+                "BitMEX": -0.3604,
+                "four": -0.5173,
+                "FTX": -0.8824
             },
             "topics": [
                 [
@@ -1655,10 +1783,17 @@
             "top_keywords_tfidf": [
                 "pardon",
                 "bitmex",
-                "trump"
+                "trump",
+                "hayes",
+                "said",
+                "delo",
+                "prison",
+                "president",
+                "probation",
+                "months"
             ]
         },
-        "timestamp": "2025-03-29T21:08:03.296340+00:00"
+        "timestamp": "2025-03-30T10:18:43.709141+00:00"
     },
     {
         "title": "FDIC Reverses U.S. Crypto Banking Policy That Demanded Prior Approvals",
@@ -1709,10 +1844,6 @@
                     "PERSON"
                 ],
                 [
-                    "Trump",
-                    "CRYPTO"
-                ],
-                [
                     "U.S.",
                     "GPE"
                 ],
@@ -1729,10 +1860,6 @@
                     "ORG"
                 ],
                 [
-                    "three",
-                    "CARDINAL"
-                ],
-                [
                     "the Federal Reserve",
                     "ORG"
                 ],
@@ -1742,7 +1869,7 @@
                 ],
                 [
                     "OCC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Banks Can Engage",
@@ -1854,14 +1981,14 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
-                "Trump": {
+                "OCC": {
                     "sentiment": "neutral",
-                    "confidence": 0.9993,
+                    "confidence": 0.8849,
                     "mentions": 2
                 }
             },
             "crypto_scores": {
-                "Trump": 0.3999
+                "OCC": 0.377
             },
             "topics": [
                 [
@@ -1880,10 +2007,17 @@
             "top_keywords_tfidf": [
                 "crypto",
                 "fdic",
-                "banks"
+                "banks",
+                "guidance",
+                "federal",
+                "2022",
+                "engage",
+                "new",
+                "approvals",
+                "activities"
             ]
         },
-        "timestamp": "2025-03-29T21:08:04.299893+00:00"
+        "timestamp": "2025-03-30T10:18:44.507757+00:00"
     },
     {
         "title": "CoreWeave Stock Debuts at $39 After Selling Shares for $40 A Piece",
@@ -1967,7 +2101,7 @@
                 ],
                 [
                     "AI",
-                    "GPE"
+                    "CRYPTO"
                 ],
                 [
                     "Lee",
@@ -2019,11 +2153,11 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -2064,13 +2198,31 @@
                     "confidence": 0.8624,
                     "mentions": 1
                 },
+                "AI": {
+                    "sentiment": "positive",
+                    "confidence": 0.827,
+                    "mentions": 2
+                },
                 "Lee": {
                     "sentiment": "negative",
                     "confidence": 1.0,
                     "mentions": 2
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
+                "AI": 1.027,
+                "BTC": 0.3,
+                "ETH": 0.3,
                 "47": 0.2725,
                 "Lee": -0.8
             },
@@ -2091,10 +2243,17 @@
             "top_keywords_tfidf": [
                 "offering",
                 "company",
-                "news"
+                "news",
+                "coreweave",
+                "public",
+                "recent",
+                "helene",
+                "ipo",
+                "million",
+                "initial"
             ]
         },
-        "timestamp": "2025-03-29T21:08:05.072704+00:00"
+        "timestamp": "2025-03-30T10:18:45.207028+00:00"
     },
     {
         "title": "Crypto Card Firm Baanx Partners With Circle for Rewards Wallet",
@@ -2109,16 +2268,12 @@
                     "CARDINAL"
                 ],
                 [
-                    "1inch",
-                    "CARDINAL"
-                ],
-                [
                     "Circle",
                     "CRYPTO"
                 ],
                 [
                     "USDC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Baanx",
@@ -2126,7 +2281,7 @@
                 ],
                 [
                     "DeFi",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Mastercard",
@@ -2147,10 +2302,6 @@
                 [
                     "Simon Jones",
                     "PERSON"
-                ],
-                [
-                    "Jones",
-                    "CRYPTO"
                 ],
                 [
                     "MataMask",
@@ -2174,7 +2325,7 @@
                 ],
                 [
                     "VP",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "partnerships & business development",
@@ -2199,10 +2350,6 @@
                 [
                     "the International Business Times",
                     "ORG"
-                ],
-                [
-                    "London",
-                    "CRYPTO"
                 ],
                 [
                     "Newsweek",
@@ -2258,7 +2405,7 @@
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -2307,32 +2454,44 @@
                     "confidence": 0.9093,
                     "mentions": 5
                 },
+                "USDC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.8908,
+                    "mentions": 3
+                },
                 "Baanx": {
                     "sentiment": "positive",
                     "confidence": 1.0,
                     "mentions": 4
+                },
+                "DeFi": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9974,
+                    "mentions": 1
                 },
                 "Visa": {
                     "sentiment": "neutral",
                     "confidence": 0.9974,
                     "mentions": 1
                 },
-                "Jones": {
+                "VP": {
                     "sentiment": "positive",
-                    "confidence": 0.995,
-                    "mentions": 3
-                },
-                "London": {
-                    "sentiment": "neutral",
                     "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9993,
                     "mentions": 1
                 }
             },
             "crypto_scores": {
                 "Circle": 1.4093,
                 "Baanx": 1.4,
-                "Jones": 1.295,
-                "London": 0.3,
+                "VP": 1.1,
+                "USDC": 0.4782,
+                "ETH": 0.2999,
+                "DeFi": 0.2995,
                 "Visa": 0.2995
             },
             "topics": [
@@ -2352,10 +2511,17 @@
             "top_keywords_tfidf": [
                 "wallet",
                 "circle",
-                "rewards"
+                "rewards",
+                "said",
+                "award",
+                "crypto",
+                "card",
+                "baanx",
+                "technology",
+                "usdc"
             ]
         },
-        "timestamp": "2025-03-29T21:08:06.258659+00:00"
+        "timestamp": "2025-03-30T10:18:46.147792+00:00"
     },
     {
         "title": "CoinDesk Weekly Recap: Stablecoins, Stablecoins, Stablecoins",
@@ -2371,11 +2537,11 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "the CoinDesk 20",
@@ -2402,10 +2568,6 @@
                     "ORG"
                 ],
                 [
-                    "Senate",
-                    "CRYPTO"
-                ],
-                [
                     "last week",
                     "DATE"
                 ],
@@ -2416,18 +2578,6 @@
                 [
                     "The Blockchain State",
                     "WORK_OF_ART"
-                ],
-                [
-                    "Avalanche",
-                    "CRYPTO"
-                ],
-                [
-                    "Solana",
-                    "CRYPTO"
-                ],
-                [
-                    "Ethereum",
-                    "CRYPTO"
                 ],
                 [
                     "Kris Sandor",
@@ -2443,7 +2593,7 @@
                 ],
                 [
                     "USD1",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Don Trump Jr.",
@@ -2462,19 +2612,7 @@
                     "PERSON"
                 ],
                 [
-                    "Circle",
-                    "CRYPTO"
-                ],
-                [
-                    "second",
-                    "ORDINAL"
-                ],
-                [
                     "USDC",
-                    "ORG"
-                ],
-                [
-                    "Japan",
                     "CRYPTO"
                 ],
                 [
@@ -2571,7 +2709,7 @@
                 ],
                 [
                     "MSTR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Saylor’s",
@@ -2579,7 +2717,7 @@
                 ],
                 [
                     "SEC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Cheyenne Ligon",
@@ -2587,7 +2725,7 @@
                 ],
                 [
                     "one",
-                    "CARDINAL"
+                    "CRYPTO"
                 ],
                 [
                     "Unicoin",
@@ -2699,32 +2837,22 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
-                "Senate": {
+                "BTC": {
+                    "sentiment": "negative",
+                    "confidence": 0.9937,
+                    "mentions": 2
+                },
+                "ETH": {
+                    "sentiment": "negative",
+                    "confidence": 0.9937,
+                    "mentions": 2
+                },
+                "USD1": {
                     "sentiment": "neutral",
-                    "confidence": 1.0,
+                    "confidence": 0.9995,
                     "mentions": 1
                 },
-                "Avalanche": {
-                    "sentiment": "neutral",
-                    "confidence": 1.0,
-                    "mentions": 1
-                },
-                "Solana": {
-                    "sentiment": "neutral",
-                    "confidence": 1.0,
-                    "mentions": 1
-                },
-                "Ethereum": {
-                    "sentiment": "neutral",
-                    "confidence": 1.0,
-                    "mentions": 1
-                },
-                "Circle": {
-                    "sentiment": "neutral",
-                    "confidence": 0.9986,
-                    "mentions": 1
-                },
-                "Japan": {
+                "USDC": {
                     "sentiment": "neutral",
                     "confidence": 0.9986,
                     "mentions": 1
@@ -2733,16 +2861,32 @@
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
+                },
+                "MSTR": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9999,
+                    "mentions": 1
+                },
+                "SEC": {
+                    "sentiment": "negative",
+                    "confidence": 0.8837,
+                    "mentions": 1
+                },
+                "one": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9997,
+                    "mentions": 2
                 }
             },
             "crypto_scores": {
-                "Senate": 0.3,
-                "Avalanche": 0.3,
-                "Solana": 0.3,
-                "Ethereum": 0.3,
+                "one": 0.3999,
                 "Visa": 0.3,
-                "Circle": 0.2997,
-                "Japan": 0.2997
+                "MSTR": 0.3,
+                "USD1": 0.2999,
+                "USDC": 0.2997,
+                "SEC": -0.7837,
+                "BTC": -0.7937,
+                "ETH": -0.7937
             },
             "topics": [
                 [
@@ -2761,10 +2905,17 @@
             "top_keywords_tfidf": [
                 "bitcoin",
                 "crypto",
-                "week"
+                "week",
+                "reported",
+                "stablecoin",
+                "company",
+                "news",
+                "strategy",
+                "coindesk",
+                "worked"
             ]
         },
-        "timestamp": "2025-03-29T21:08:07.578369+00:00"
+        "timestamp": "2025-03-30T10:18:47.141538+00:00"
     },
     {
         "title": "A Public Company Boasting Trump's Sons on Advisory Board Is Buying BlackRock Bitcoin ETFs",
@@ -2828,15 +2979,15 @@
                 ],
                 [
                     "IBIT",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETF",
-                    "PRODUCT"
+                    "CRYPTO"
                 ],
                 [
                     "Dominari",
-                    "ORG"
+                    "PERSON"
                 ],
                 [
                     "$2 million",
@@ -2904,11 +3055,11 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -2957,10 +3108,34 @@
                     "sentiment": "neutral",
                     "confidence": 0.9717,
                     "mentions": 4
+                },
+                "IBIT": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 2
+                },
+                "ETF": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9994,
+                    "mentions": 3
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
                 "Trump": 0.5943,
+                "ETF": 0.4999,
+                "IBIT": 0.4,
+                "BTC": 0.3,
+                "ETH": 0.3,
                 "Eric": 0.2582
             },
             "topics": [
@@ -2980,10 +3155,17 @@
             "top_keywords_tfidf": [
                 "bitcoin",
                 "trump",
-                "donald"
+                "donald",
+                "crypto",
+                "york",
+                "dominari",
+                "spot",
+                "strategy",
+                "president",
+                "reserve"
             ]
         },
-        "timestamp": "2025-03-29T21:08:08.539441+00:00"
+        "timestamp": "2025-03-30T10:18:48.082873+00:00"
     },
     {
         "title": "Strategy Holders Might be at Risk From Michael Saylor's Financial Wizardry",
@@ -3007,7 +3189,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "roughly $44 billion",
@@ -3062,14 +3244,6 @@
                     "DATE"
                 ],
                 [
-                    "Genesis",
-                    "CRYPTO"
-                ],
-                [
-                    "Three",
-                    "CRYPTO"
-                ],
-                [
                     "Silvergate",
                     "ORG"
                 ],
@@ -3079,15 +3253,11 @@
                 ],
                 [
                     "MSTR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Thompson",
                     "ORG"
-                ],
-                [
-                    "three",
-                    "CARDINAL"
                 ],
                 [
                     "zero percent",
@@ -3131,7 +3301,7 @@
                 ],
                 [
                     "STRK",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "0.4%",
@@ -3291,20 +3461,25 @@
             ],
             "bert_sentiment_summary": "negative",
             "entity_sentiment": {
-                "Genesis": {
-                    "sentiment": "negative",
-                    "confidence": 0.9991,
-                    "mentions": 1
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9999,
+                    "mentions": 3
                 },
-                "Three": {
+                "MSTR": {
                     "sentiment": "negative",
-                    "confidence": 0.9991,
-                    "mentions": 1
+                    "confidence": 0.9997,
+                    "mentions": 11
                 },
                 "Park": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 3
+                },
+                "STRK": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 2
                 },
                 "Tom": {
                     "sentiment": "neutral",
@@ -3313,10 +3488,11 @@
                 }
             },
             "crypto_scores": {
+                "BTC": 0.5,
                 "Park": 0.5,
+                "STRK": 0.4,
                 "Tom": 0.3,
-                "Genesis": -0.8991,
-                "Three": -0.8991
+                "MSTR": -0.4997
             },
             "topics": [
                 [
@@ -3335,10 +3511,17 @@
             "top_keywords_tfidf": [
                 "strategy",
                 "stock",
-                "bitcoin"
+                "bitcoin",
+                "mstr",
+                "price",
+                "investors",
+                "equity",
+                "company",
+                "shares",
+                "convertible"
             ]
         },
-        "timestamp": "2025-03-29T21:08:10.300954+00:00"
+        "timestamp": "2025-03-30T10:18:50.313908+00:00"
     },
     {
         "title": "Crypto Bill to Combat Illicit Activity Gets New Push After Passing U.S. House in 2024",
@@ -3363,10 +3546,6 @@
                 [
                     "last year",
                     "DATE"
-                ],
-                [
-                    "Senate",
-                    "CRYPTO"
                 ],
                 [
                     "The Financial Technology Protection Act",
@@ -3474,7 +3653,7 @@
                 ],
                 [
                     "BBC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Black Ballad",
@@ -3534,12 +3713,12 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
-                "Senate": {
-                    "sentiment": "negative",
-                    "confidence": 0.5318,
+                "Red": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
                     "mentions": 1
                 },
-                "Red": {
+                "BBC": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
@@ -3547,7 +3726,7 @@
             },
             "crypto_scores": {
                 "Red": 0.3,
-                "Senate": -0.4318
+                "BBC": 0.3
             },
             "topics": [
                 [
@@ -3566,10 +3745,17 @@
             "top_keywords_tfidf": [
                 "digital",
                 "crypto",
-                "house"
+                "house",
+                "assets",
+                "financial",
+                "degree",
+                "shumba",
+                "representatives",
+                "version",
+                "year"
             ]
         },
-        "timestamp": "2025-03-29T21:08:11.126268+00:00"
+        "timestamp": "2025-03-30T10:18:50.989758+00:00"
     },
     {
         "title": "CoinDesk 20 Performance Update: Index Declines 4.5% as All Assets Trade Lower",
@@ -3613,11 +3799,11 @@
                 ],
                 [
                     "BCH",
-                    "PERSON"
+                    "CRYPTO"
                 ],
                 [
                     "POL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -3640,8 +3826,22 @@
                 }
             ],
             "bert_sentiment_summary": "neutral",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "BCH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "POL": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9999,
+                    "mentions": 1
+                }
+            },
+            "crypto_scores": {
+                "BCH": 0.3,
+                "POL": 0.3
+            },
             "topics": [
                 [
                     "traded",
@@ -3659,10 +3859,17 @@
             "top_keywords_tfidf": [
                 "coindesk",
                 "20",
-                "laggards"
+                "laggards",
+                "trading",
+                "leaders",
+                "index",
+                "update",
+                "thursday",
+                "presents",
+                "traded"
             ]
         },
-        "timestamp": "2025-03-29T21:08:11.728319+00:00"
+        "timestamp": "2025-03-30T10:18:51.448265+00:00"
     },
     {
         "title": "Grayscale Files for Spot Avalanche ETF on Nasdaq",
@@ -3686,7 +3893,7 @@
                 ],
                 [
                     "SEC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Avalanche",
@@ -3706,7 +3913,7 @@
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Grayscale’s",
@@ -3714,7 +3921,7 @@
                 ],
                 [
                     "ETF",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Coinbase Custody",
@@ -3754,7 +3961,7 @@
                 ],
                 [
                     "ADA",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Francisco",
@@ -3763,10 +3970,6 @@
                 [
                     "CoinDesk",
                     "PRODUCT"
-                ],
-                [
-                    "solana",
-                    "PERSON"
                 ],
                 [
                     "1,000",
@@ -3806,14 +4009,38 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
+                "SEC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9998,
+                    "mentions": 2
+                },
                 "Avalanche": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 5
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETF": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9767,
+                    "mentions": 6
+                },
+                "ADA": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9979,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
-                "Avalanche": 0.7
+                "Avalanche": 0.7,
+                "ETF": 0.6953,
+                "SEC": 0.4,
+                "ETH": 0.3,
+                "ADA": 0.2996
             },
             "topics": [
                 [
@@ -3832,10 +4059,17 @@
             "top_keywords_tfidf": [
                 "avalanche",
                 "etf",
-                "grayscale"
+                "grayscale",
+                "coindesk",
+                "filing",
+                "vehicle",
+                "token",
+                "trading",
+                "investment",
+                "exposure"
             ]
         },
-        "timestamp": "2025-03-29T21:08:12.605656+00:00"
+        "timestamp": "2025-03-30T10:18:52.356659+00:00"
     },
     {
         "title": "Galaxy Digital Reaches $200M Settlement Agreement With NYAG Over LUNA Investments",
@@ -3875,7 +4109,7 @@
                 ],
                 [
                     "LUNA",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "May 2022",
@@ -3922,10 +4156,6 @@
                     "ORG"
                 ],
                 [
-                    "Helios",
-                    "CRYPTO"
-                ],
-                [
                     "West Texas",
                     "GPE"
                 ],
@@ -3963,19 +4193,19 @@
                 ],
                 [
                     "VC",
-                    "PERSON"
+                    "CRYPTO"
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "DOGE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -4007,14 +4237,38 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
-                "Helios": {
+                "LUNA": {
+                    "sentiment": "negative",
+                    "confidence": 0.9335,
+                    "mentions": 1
+                },
+                "VC": {
                     "sentiment": "neutral",
-                    "confidence": 0.9999,
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "DOGE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
                     "mentions": 1
                 }
             },
             "crypto_scores": {
-                "Helios": 0.3
+                "VC": 0.3,
+                "BTC": 0.3,
+                "ETH": 0.3,
+                "DOGE": 0.3,
+                "LUNA": -0.8335
             },
             "topics": [
                 [
@@ -4033,10 +4287,17 @@
             "top_keywords_tfidf": [
                 "million",
                 "galaxy",
-                "settlement"
+                "settlement",
+                "firm",
+                "profit",
+                "relating",
+                "luna",
+                "year",
+                "pay",
+                "news"
             ]
         },
-        "timestamp": "2025-03-29T21:08:13.254481+00:00"
+        "timestamp": "2025-03-30T10:18:53.040091+00:00"
     },
     {
         "title": "Crypto Daybook Americas: Altcoins Slide, Gold Shines as Trump Tariffs Spur Flight to Safety",
@@ -4048,7 +4309,7 @@
             "entities": [
                 [
                     "Crypto Daybook Americas",
-                    "ORG"
+                    "PERSON"
                 ],
                 [
                     "the coming day",
@@ -4084,7 +4345,7 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "2.5%",
@@ -4100,7 +4361,7 @@
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "5.5%",
@@ -4108,7 +4369,7 @@
                 ],
                 [
                     "XRP",
-                    "GPE"
+                    "CRYPTO"
                 ],
                 [
                     "7%",
@@ -4116,7 +4377,7 @@
                 ],
                 [
                     "DOGE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "CoinDesk 20 Index",
@@ -4140,7 +4401,7 @@
                 ],
                 [
                     "one",
-                    "CARDINAL"
+                    "CRYPTO"
                 ],
                 [
                     "U.S.",
@@ -4164,7 +4425,7 @@
                 ],
                 [
                     "max",
-                    "PERSON"
+                    "CRYPTO"
                 ],
                 [
                     "85,000",
@@ -4204,7 +4465,7 @@
                 ],
                 [
                     "ETF",
-                    "PRODUCT"
+                    "CRYPTO"
                 ],
                 [
                     "around $115 million",
@@ -4239,10 +4500,6 @@
                     "PRODUCT"
                 ],
                 [
-                    "solana",
-                    "PERSON"
-                ],
-                [
                     "1,000",
                     "MONEY"
                 ],
@@ -4252,7 +4509,7 @@
                 ],
                 [
                     "DeFi",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "over $1,000",
@@ -4260,63 +4517,63 @@
                 ],
                 [
                     "SOL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "NEAR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "YFI",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "YFII",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "SHIB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "USDT",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "USDC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "BNB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "XMR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "VET",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "CAKE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "AAVE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "COMP",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ROOK",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "SNX",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "RUNE, FTM",
@@ -4324,50 +4581,34 @@
                 ],
                 [
                     "ZIL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "KSM",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ENJ",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "CKB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "JOE",
-                    "ORG"
-                ],
-                [
-                    "BTRFLY",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "OHM",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ROME",
-                    "GPE"
-                ],
-                [
-                    "BURGER",
-                    "ORG"
-                ],
-                [
-                    "SPIRIT",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ORCA",
-                    "ORG"
-                ],
-                [
-                    "Compound",
                     "CRYPTO"
                 ],
                 [
@@ -4379,24 +4620,12 @@
                     "ORG"
                 ],
                 [
-                    "PancakeSwap",
-                    "ORG"
-                ],
-                [
                     "BurgerSwap",
                     "ORG"
                 ],
                 [
                     "Orca",
                     "CRYPTO"
-                ],
-                [
-                    "AnySwap",
-                    "GPE"
-                ],
-                [
-                    "SpiritSwap",
-                    "ORG"
                 ],
                 [
                     "Yearn Finance",
@@ -4424,7 +4653,7 @@
                 ],
                 [
                     "SUN",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -4472,12 +4701,162 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
+                "BTC": {
+                    "sentiment": "positive",
+                    "confidence": 0.8905,
+                    "mentions": 5
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 3
+                },
+                "XRP": {
+                    "sentiment": "negative",
+                    "confidence": 0.956,
+                    "mentions": 1
+                },
+                "DOGE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 2
+                },
+                "one": {
+                    "sentiment": "positive",
+                    "confidence": 0.7784,
+                    "mentions": 2
+                },
+                "max": {
+                    "sentiment": "positive",
+                    "confidence": 0.9999,
+                    "mentions": 1
+                },
+                "ETF": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9982,
+                    "mentions": 3
+                },
                 "Asia": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
                 },
-                "Compound": {
+                "DeFi": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SOL": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "NEAR": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "YFI": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "YFII": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SHIB": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "USDT": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "USDC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "BNB": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "XMR": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "VET": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "CAKE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "AAVE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "COMP": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ROOK": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SNX": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ZIL": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "KSM": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ENJ": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "CKB": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "JOE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "OHM": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ROME": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ORCA": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
@@ -4491,13 +4870,49 @@
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
+                },
+                "SUN": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
+                "BTC": 1.3905,
+                "max": 1.0999,
+                "one": 0.9784,
+                "ETH": 0.5,
+                "ETF": 0.4996,
+                "DOGE": 0.4,
                 "Asia": 0.3,
-                "Compound": 0.3,
+                "DeFi": 0.3,
+                "SOL": 0.3,
+                "NEAR": 0.3,
+                "YFI": 0.3,
+                "YFII": 0.3,
+                "SHIB": 0.3,
+                "USDT": 0.3,
+                "USDC": 0.3,
+                "BNB": 0.3,
+                "XMR": 0.3,
+                "VET": 0.3,
+                "CAKE": 0.3,
+                "AAVE": 0.3,
+                "COMP": 0.3,
+                "ROOK": 0.3,
+                "SNX": 0.3,
+                "ZIL": 0.3,
+                "KSM": 0.3,
+                "ENJ": 0.3,
+                "CKB": 0.3,
+                "JOE": 0.3,
+                "OHM": 0.3,
+                "ROME": 0.3,
+                "ORCA": 0.3,
                 "Orca": 0.3,
-                "Rome": 0.3
+                "Rome": 0.3,
+                "SUN": 0.3,
+                "XRP": -0.856
             },
             "topics": [
                 [
@@ -4516,10 +4931,17 @@
             "top_keywords_tfidf": [
                 "crypto",
                 "coindesk",
-                "spot"
+                "spot",
+                "btc",
+                "000",
+                "data",
+                "bitcoin",
+                "market",
+                "billion",
+                "eth"
             ]
         },
-        "timestamp": "2025-03-29T21:08:15.840946+00:00"
+        "timestamp": "2025-03-30T10:18:55.516083+00:00"
     },
     {
         "title": "French State Bank Bpifrance Plans $27M Investment in Digital Assets",
@@ -4547,7 +4969,7 @@
                 ],
                 [
                     "DeFi",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Thursday",
@@ -4591,19 +5013,19 @@
                 ],
                 [
                     "VC",
-                    "PERSON"
+                    "CRYPTO"
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "DOGE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -4634,8 +5056,40 @@
                 }
             ],
             "bert_sentiment_summary": "neutral",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "DeFi": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "VC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "DOGE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                }
+            },
+            "crypto_scores": {
+                "DeFi": 0.3,
+                "VC": 0.3,
+                "BTC": 0.3,
+                "ETH": 0.3,
+                "DOGE": 0.3
+            },
             "topics": [
                 [
                     "invest",
@@ -4653,10 +5107,17 @@
             "top_keywords_tfidf": [
                 "crypto",
                 "bank",
-                "blockchain"
+                "blockchain",
+                "assets",
+                "said",
+                "staking",
+                "million",
+                "news",
+                "initiative",
+                "invest"
             ]
         },
-        "timestamp": "2025-03-29T21:08:16.357605+00:00"
+        "timestamp": "2025-03-30T10:18:56.097470+00:00"
     },
     {
         "title": "Iconic 'Mt. Gox, Where Is Our Money?' Sign Is Up for Auction",
@@ -4699,10 +5160,6 @@
                     "DATE"
                 ],
                 [
-                    "first",
-                    "ORDINAL"
-                ],
-                [
                     "Scarce",
                     "GPE"
                 ],
@@ -4735,12 +5192,8 @@
                     "GPE"
                 ],
                 [
-                    "London",
-                    "CRYPTO"
-                ],
-                [
                     "Mt. Gox",
-                    "LOC"
+                    "PRODUCT"
                 ],
                 [
                     "one morning",
@@ -4764,7 +5217,7 @@
                 ],
                 [
                     "one",
-                    "CARDINAL"
+                    "CRYPTO"
                 ],
                 [
                     "February 2014, days",
@@ -4785,10 +5238,6 @@
                 [
                     "2022",
                     "DATE"
-                ],
-                [
-                    "Korea",
-                    "CRYPTO"
                 ],
                 [
                     "August 2024",
@@ -4832,7 +5281,7 @@
                 ],
                 [
                     "FTX",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Blockworks",
@@ -4897,15 +5346,10 @@
                     "confidence": 1.0,
                     "mentions": 1
                 },
-                "London": {
-                    "sentiment": "neutral",
-                    "confidence": 0.9999,
-                    "mentions": 1
-                },
-                "Korea": {
-                    "sentiment": "neutral",
-                    "confidence": 1.0,
-                    "mentions": 1
+                "one": {
+                    "sentiment": "negative",
+                    "confidence": 0.9912,
+                    "mentions": 6
                 },
                 "Asia": {
                     "sentiment": "neutral",
@@ -4916,14 +5360,19 @@
                     "sentiment": "neutral",
                     "confidence": 0.6977,
                     "mentions": 2
+                },
+                "FTX": {
+                    "sentiment": "positive",
+                    "confidence": 0.5289,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
+                "FTX": 0.6289,
                 "Sam": 0.3395,
                 "One": 0.3,
-                "London": 0.3,
-                "Korea": 0.3,
-                "Asia": 0.3
+                "Asia": 0.3,
+                "one": -0.4912
             },
             "topics": [
                 [
@@ -4942,10 +5391,17 @@
             "top_keywords_tfidf": [
                 "burges",
                 "gox",
-                "mt"
+                "mt",
+                "said",
+                "tokyo",
+                "exchange",
+                "karpeles",
+                "sign",
+                "crypto",
+                "coindesk"
             ]
         },
-        "timestamp": "2025-03-29T21:08:17.579756+00:00"
+        "timestamp": "2025-03-30T10:18:57.130624+00:00"
     },
     {
         "title": "UK Regulator Intends to Start Authorizing Crypto Firms in 2026",
@@ -4982,10 +5438,6 @@
                 [
                     "Coinbase",
                     "ORG"
-                ],
-                [
-                    "Gemini",
-                    "CRYPTO"
                 ],
                 [
                     "Bitpanda",
@@ -5093,7 +5545,7 @@
                 ],
                 [
                     "BBC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Black Ballad",
@@ -5169,11 +5621,6 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
-                "Gemini": {
-                    "sentiment": "neutral",
-                    "confidence": 0.9996,
-                    "mentions": 1
-                },
                 "Long": {
                     "sentiment": "neutral",
                     "confidence": 0.9995,
@@ -5183,12 +5630,17 @@
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
+                },
+                "BBC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
                 "Long": 0.6999,
                 "Red": 0.3,
-                "Gemini": 0.2999
+                "BBC": 0.3
             },
             "topics": [
                 [
@@ -5207,10 +5659,17 @@
             "top_keywords_tfidf": [
                 "said",
                 "regime",
-                "crypto"
+                "crypto",
+                "long",
+                "firms",
+                "stablecoins",
+                "fca",
+                "authorization",
+                "uk",
+                "need"
             ]
         },
-        "timestamp": "2025-03-29T21:08:18.942499+00:00"
+        "timestamp": "2025-03-30T10:18:58.144389+00:00"
     },
     {
         "title": "Dogecoin, XRP Sink 7% as Trump Tariffs Threats  Dent Markets; Bitcoin Options Expiry Looms",
@@ -5222,11 +5681,11 @@
             "entities": [
                 [
                     "DOGE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "xrp (XRP",
@@ -5318,11 +5777,11 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "max",
-                    "PERSON"
+                    "CRYPTO"
                 ],
                 [
                     "85,000",
@@ -5330,7 +5789,7 @@
                 ],
                 [
                     "OI",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Singapore",
@@ -5342,15 +5801,11 @@
                 ],
                 [
                     "Telegram",
-                    "ORG"
+                    "PRODUCT"
                 ],
                 [
                     "tomorrow",
                     "DATE"
-                ],
-                [
-                    "Trump",
-                    "CRYPTO"
                 ],
                 [
                     "monthly",
@@ -5414,7 +5869,7 @@
                 ],
                 [
                     "DeFi",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "over $1,000",
@@ -5422,63 +5877,63 @@
                 ],
                 [
                     "SOL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "NEAR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "YFI",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "YFII",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "SHIB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "USDT",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "USDC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "BNB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "XMR",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "VET",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "CAKE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "AAVE",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "COMP",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ROOK",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "SNX",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "RUNE, FTM",
@@ -5486,50 +5941,34 @@
                 ],
                 [
                     "ZIL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "KSM",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ENJ",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "CKB",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "JOE",
-                    "ORG"
-                ],
-                [
-                    "BTRFLY",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "OHM",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ROME",
-                    "GPE"
-                ],
-                [
-                    "BURGER",
-                    "ORG"
-                ],
-                [
-                    "SPIRIT",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ORCA",
-                    "ORG"
-                ],
-                [
-                    "Compound",
                     "CRYPTO"
                 ],
                 [
@@ -5541,24 +5980,12 @@
                     "ORG"
                 ],
                 [
-                    "PancakeSwap",
-                    "ORG"
-                ],
-                [
                     "BurgerSwap",
                     "ORG"
                 ],
                 [
                     "Orca",
                     "CRYPTO"
-                ],
-                [
-                    "AnySwap",
-                    "GPE"
-                ],
-                [
-                    "SpiritSwap",
-                    "ORG"
                 ],
                 [
                     "Yearn Finance",
@@ -5586,7 +6013,7 @@
                 ],
                 [
                     "SUN",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -5638,10 +6065,30 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
-                "Trump": {
-                    "sentiment": "negative",
-                    "confidence": 0.9999,
+                "DOGE": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9961,
+                    "mentions": 3
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9998,
                     "mentions": 2
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9999,
+                    "mentions": 3
+                },
+                "max": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "OI": {
+                    "sentiment": "negative",
+                    "confidence": 1.0,
+                    "mentions": 1
                 },
                 "Bitcoin": {
                     "sentiment": "positive",
@@ -5653,7 +6100,122 @@
                     "confidence": 0.9844,
                     "mentions": 4
                 },
-                "Compound": {
+                "DeFi": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SOL": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "NEAR": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "YFI": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "YFII": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SHIB": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "USDT": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "USDC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "BNB": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "XMR": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "VET": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "CAKE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "AAVE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "COMP": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ROOK": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SNX": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ZIL": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "KSM": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ENJ": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "CKB": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "JOE": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "OHM": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ROME": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ORCA": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
@@ -5667,15 +6229,48 @@
                     "sentiment": "neutral",
                     "confidence": 1.0,
                     "mentions": 1
+                },
+                "SUN": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
                 "Asia": 1.3844,
                 "Bitcoin": 0.7637,
-                "Compound": 0.3,
+                "BTC": 0.5,
+                "DOGE": 0.4992,
+                "ETH": 0.4,
+                "max": 0.3,
+                "DeFi": 0.3,
+                "SOL": 0.3,
+                "NEAR": 0.3,
+                "YFI": 0.3,
+                "YFII": 0.3,
+                "SHIB": 0.3,
+                "USDT": 0.3,
+                "USDC": 0.3,
+                "BNB": 0.3,
+                "XMR": 0.3,
+                "VET": 0.3,
+                "CAKE": 0.3,
+                "AAVE": 0.3,
+                "COMP": 0.3,
+                "ROOK": 0.3,
+                "SNX": 0.3,
+                "ZIL": 0.3,
+                "KSM": 0.3,
+                "ENJ": 0.3,
+                "CKB": 0.3,
+                "JOE": 0.3,
+                "OHM": 0.3,
+                "ROME": 0.3,
+                "ORCA": 0.3,
                 "Orca": 0.3,
                 "Rome": 0.3,
-                "Trump": -0.7999
+                "SUN": 0.3,
+                "OI": -0.9
             },
             "topics": [
                 [
@@ -5694,10 +6289,17 @@
             "top_keywords_tfidf": [
                 "inflation",
                 "pce",
-                "market"
+                "market",
+                "bitcoin",
+                "data",
+                "btc",
+                "traders",
+                "coindesk",
+                "hours",
+                "index"
             ]
         },
-        "timestamp": "2025-03-29T21:08:20.447625+00:00"
+        "timestamp": "2025-03-30T10:19:00.597054+00:00"
     },
     {
         "title": "GameStop Prices Bitcoin Notes at $29.85",
@@ -5709,7 +6311,7 @@
             "entities": [
                 [
                     "GME",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "$1.3 billion",
@@ -5717,11 +6319,11 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "zero",
-                    "CARDINAL"
+                    "CRYPTO"
                 ],
                 [
                     "2030",
@@ -5797,7 +6399,7 @@
                 ],
                 [
                     "FTX",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Blockworks",
@@ -5837,6 +6439,21 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
+                "GME": {
+                    "sentiment": "negative",
+                    "confidence": 0.7671,
+                    "mentions": 3
+                },
+                "BTC": {
+                    "sentiment": "negative",
+                    "confidence": 0.9999,
+                    "mentions": 2
+                },
+                "zero": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
                 "Asia": {
                     "sentiment": "neutral",
                     "confidence": 1.0,
@@ -5846,11 +6463,20 @@
                     "sentiment": "neutral",
                     "confidence": 0.6977,
                     "mentions": 2
+                },
+                "FTX": {
+                    "sentiment": "positive",
+                    "confidence": 0.5289,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
+                "FTX": 0.6289,
                 "Sam": 0.3395,
-                "Asia": 0.3
+                "zero": 0.3,
+                "Asia": 0.3,
+                "GME": -0.4671,
+                "BTC": -0.7999
             },
             "topics": [
                 [
@@ -5869,10 +6495,17 @@
             "top_keywords_tfidf": [
                 "gme",
                 "btc",
-                "bitcoin"
+                "bitcoin",
+                "notes",
+                "thursday",
+                "riot",
+                "reporter",
+                "price",
+                "company",
+                "gamestop"
             ]
         },
-        "timestamp": "2025-03-29T21:08:21.276308+00:00"
+        "timestamp": "2025-03-30T10:19:01.402791+00:00"
     },
     {
         "title": "CoreWeave Goes Public at $40 Per Share, Raises $1.5 Billion",
@@ -5900,15 +6533,11 @@
                 ],
                 [
                     "Bloomberg",
-                    "GPE"
+                    "ORG"
                 ],
                 [
                     "Thursday",
                     "DATE"
-                ],
-                [
-                    "night",
-                    "TIME"
                 ],
                 [
                     "37.5 million",
@@ -5980,7 +6609,7 @@
                 ],
                 [
                     "AI",
-                    "GPE"
+                    "CRYPTO"
                 ],
                 [
                     "March 28, 2025",
@@ -6024,11 +6653,11 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -6063,8 +6692,28 @@
                 }
             ],
             "bert_sentiment_summary": "negative",
-            "entity_sentiment": {},
-            "crypto_scores": {},
+            "entity_sentiment": {
+                "AI": {
+                    "sentiment": "negative",
+                    "confidence": 1.0,
+                    "mentions": 2
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                }
+            },
+            "crypto_scores": {
+                "BTC": 0.3,
+                "ETH": 0.3,
+                "AI": -0.8
+            },
             "topics": [
                 [
                     "york",
@@ -6082,10 +6731,17 @@
             "top_keywords_tfidf": [
                 "billion",
                 "million",
-                "news"
+                "news",
+                "reported",
+                "new",
+                "coreweave",
+                "company",
+                "ipo",
+                "helene",
+                "york"
             ]
         },
-        "timestamp": "2025-03-29T21:08:22.051057+00:00"
+        "timestamp": "2025-03-30T10:19:02.115740+00:00"
     },
     {
         "title": "Sei Foundation Explores Buying 23andMe to Put Genetic Data on Blockchain",
@@ -6117,7 +6773,7 @@
                 ],
                 [
                     "DeSci",
-                    "PERSON"
+                    "CRYPTO"
                 ],
                 [
                     "Earlier this year",
@@ -6153,7 +6809,7 @@
                 ],
                 [
                     "SEI",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "as much as 3%",
@@ -6177,15 +6833,15 @@
                 ],
                 [
                     "BTC",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "SOL",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "ETH",
-                    "ORG"
+                    "CRYPTO"
                 ],
                 [
                     "Contact",
@@ -6221,14 +6877,44 @@
             ],
             "bert_sentiment_summary": "neutral",
             "entity_sentiment": {
+                "DeSci": {
+                    "sentiment": "neutral",
+                    "confidence": 0.9988,
+                    "mentions": 2
+                },
                 "Sei": {
                     "sentiment": "neutral",
                     "confidence": 0.9378,
                     "mentions": 3
+                },
+                "SEI": {
+                    "sentiment": "positive",
+                    "confidence": 1.0,
+                    "mentions": 2
+                },
+                "BTC": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "SOL": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
+                },
+                "ETH": {
+                    "sentiment": "neutral",
+                    "confidence": 1.0,
+                    "mentions": 1
                 }
             },
             "crypto_scores": {
-                "Sei": 0.4876
+                "SEI": 1.2,
+                "Sei": 0.4876,
+                "DeSci": 0.3998,
+                "BTC": 0.3,
+                "SOL": 0.3,
+                "ETH": 0.3
             },
             "topics": [
                 [
@@ -6247,9 +6933,16 @@
             "top_keywords_tfidf": [
                 "data",
                 "sei",
-                "foundation"
+                "foundation",
+                "company",
+                "23andme",
+                "blockchain",
+                "security",
+                "users",
+                "desci",
+                "earlier"
             ]
         },
-        "timestamp": "2025-03-29T21:08:22.802265+00:00"
+        "timestamp": "2025-03-30T10:19:02.819267+00:00"
     }
 ]
