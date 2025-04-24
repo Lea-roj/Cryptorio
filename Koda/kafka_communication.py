@@ -12,3 +12,14 @@ def get_kafka_producer():
 def send_to_kafka(producer, topic, data):
     producer.send(topic, value=data)
     producer.flush()
+
+
+if __name__ == "__main__":
+    producer = get_kafka_producer()
+
+    with open("coindesk_news.json", "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+    for article in articles:
+        send_to_kafka(producer, "analyzed_articles", article)
+        print(f"Sent: {article['title']}")
