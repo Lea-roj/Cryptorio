@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime, timezone
 from helper_functions import analyze_text
+from kafka_communication import get_kafka_producer, send_to_kafka
 
 RSS_URL = "https://www.coindesk.com/arc/outboundfeeds/rss/"
 
@@ -42,6 +43,8 @@ def log_article(new_data, log_path="logs/coindesk_news.json"):
 
 def main():
     entries = fetch_rss_entries()
+    producer = get_kafka_producer()
+
     for entry in entries:
         full_text = extract_full_article(entry.link)
 
@@ -57,7 +60,8 @@ def main():
             "analysis": result
         }
 
-        log_article(data)
+        # log_article(data)
+        send_to_kafka(producer, 'analyzed_articles', data)
 
 
 if __name__ == "__main__":
