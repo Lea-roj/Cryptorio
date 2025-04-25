@@ -48,6 +48,9 @@ def main():
     for entry in entries:
         full_text = extract_full_article(entry.link)
 
+        if not full_text:
+            continue
+
         content = full_text
 
         result = analyze_text(content)
@@ -60,8 +63,8 @@ def main():
             "analysis": result
         }
 
-        # log_article(data)
-        send_to_kafka(producer, 'analyzed_articles', data)
+        log_article(data)
+        # send_to_kafka(producer, 'analyzed_articles', data)
 
 
 if __name__ == "__main__":

@@ -11,6 +11,8 @@ from collections import Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
+from crypto_probability import is_probably_crypto
+
 nltk.download('vader_lexicon')
 nlp = spacy.load("en_core_web_sm")
 sid = SentimentIntensityAnalyzer()
@@ -35,7 +37,7 @@ def preprocess_text(text):
     return ' '.join(text.split())
 
 
-def extract_entities(text, tfidf_keywords):
+def extract_entities(text, tfidf_keywords, disambiguation_threshold=0.6):
     doc = nlp(text)
     entity_map = {}
 
@@ -57,8 +59,18 @@ def extract_entities(text, tfidf_keywords):
             continue
 
         if name_lower in crypto_names_and_symbols:
-            if len(name_lower) <= 4 or name_lower in tfidf_keywords:
+            # based on nearby meaningful sentences
+            context_window = [s.text for s in doc.sents if name in s.text or len(s.text.split()) > 5]
+            context = " ".join(context_window[:3]) if context_window else text
+
+            crypto_prob = is_probably_crypto(name, context)
+
+            if crypto_prob >= disambiguation_threshold:
                 entity_map[name] = "CRYPTO"
+            else:
+                entity_map[name] = ent.label_
+                print(
+                    f"[FILTERED] '{name}' looked like crypto but got {crypto_prob:.2f} score. Keeping original label '{ent.label_}'.")
         elif name_lower in exchange_names:
             entity_map[name] = "EXCHANGE"
         else:
