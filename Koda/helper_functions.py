@@ -1,5 +1,5 @@
 import json
-
+import re
 import nltk
 import spacy
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -37,41 +37,61 @@ def preprocess_text(text):
     return ' '.join(text.split())
 
 
-def extract_entities(text, tfidf_keywords, disambiguation_threshold=0.6):
+def extract_entities(text, tfidf_keywords, disambiguation_threshold=0.4):
     doc = nlp(text)
     entity_map = {}
+    trusted_symbols = {"BTC", "ETH", "SOL", "USDT", "USDC", "BNB", "XRP"}
 
-    with open("api_lists/full_crypto_list.json", "r", encoding="utf-8") as f:
+    with open("api_lists/full_crypto_list_coinmarketcap.json", "r", encoding="utf-8") as f:
         crypto_data = json.load(f)
     with open("api_lists/exchange_list.json", "r", encoding="utf-8") as f:
         exchange_names = set(name.lower() for name in json.load(f))
 
-    crypto_names_and_symbols = set()
-    for coin in crypto_data:
-        crypto_names_and_symbols.add(coin["name"].lower())
-        crypto_names_and_symbols.add(coin["symbol"].lower())
+    symbol_to_name = {coin["symbol"]: coin["name"] for coin in crypto_data}
+    name_to_symbol = {coin["name"]: coin["symbol"] for coin in crypto_data}
+    crypto_names = set(name_to_symbol.keys())
+    crypto_symbols = set(symbol_to_name.keys())
+
+    pattern = r"(\b[A-Z][a-zA-Z0-9\s-]{2,}\b)\s*\(\s*([A-Z0-9]{2,5})\s*\)"  # name (symbol) pattern
+    for match in re.findall(pattern, text):
+        name, symbol = match[0].strip(), match[1].strip()
+        if name in crypto_names and symbol in crypto_symbols:
+            entity_map[name] = "CRYPTO"
+            entity_map[symbol] = "CRYPTO"
+            print(f"[MATCHED PAIR] '{name} ({symbol})' found in text --> both labeled as CRYPTO")
 
     for ent in doc.ents:
         name = ent.text.strip()
-        name_lower = name.lower()
 
-        if len(name_lower) < 2:
+        if len(name) < 2 or name in entity_map:
             continue
 
-        if name_lower in crypto_names_and_symbols:
-            # based on nearby meaningful sentences
-            context_window = [s.text for s in doc.sents if name in s.text or len(s.text.split()) > 5]
-            context = " ".join(context_window[:3]) if context_window else text
+        is_exact_crypto = name in crypto_names or name in crypto_symbols
+        is_short = len(name) <= 3
+        is_numeric = name.isnumeric()
 
-            crypto_prob = is_probably_crypto(name, context)
+        if is_exact_crypto:
+            if is_numeric:
+                full_name = symbol_to_name.get(name)
+                if full_name and full_name not in text:
+                    print(f"[REJECTED NUMERIC] '{name}' found, but full name '{full_name}' not in text.")
+                    entity_map[name] = ent.label_
+                    continue
 
-            if crypto_prob >= disambiguation_threshold:
-                entity_map[name] = "CRYPTO"
+            if is_short and name not in trusted_symbols:
+                context_window = [s.text for s in doc.sents if name in s.text or len(s.text.split()) > 5]
+                context = " ".join(context_window[:3]) if context_window else text
+                confidence = is_probably_crypto(name, context)
+
+                if confidence >= disambiguation_threshold:
+                    entity_map[name] = "CRYPTO"
+                else:
+                    print(f"[FILTERED] '{name}' looked like crypto but got {confidence:.2f} confidence.")
+                    entity_map[name] = ent.label_
             else:
-                entity_map[name] = ent.label_
-                print(
-                    f"[FILTERED] '{name}' looked like crypto but got {crypto_prob:.2f} score. Keeping original label '{ent.label_}'.")
-        elif name_lower in exchange_names:
+                entity_map[name] = "CRYPTO"
+
+        elif name.lower() in exchange_names:
             entity_map[name] = "EXCHANGE"
         else:
             entity_map[name] = ent.label_

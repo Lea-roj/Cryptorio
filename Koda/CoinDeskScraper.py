@@ -23,7 +23,8 @@ def extract_full_article(url):
         article_text = " ".join(p.get_text() for p in paragraphs if p.get_text())
         return article_text.strip()
     except Exception as e:
-        return e
+        print(f"Could not fetch article from {url}: {e}")
+        return None
 
 
 def log_article(new_data, log_path="logs/coindesk_news.json"):
