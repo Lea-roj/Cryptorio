@@ -3,10 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime, timezone
-from helper_functions import analyze_text
-from kafka_communication import get_kafka_producer, send_to_kafka
-
-RSS_URL = "https://www.coindesk.com/arc/outboundfeeds/rss/"
+from global_params import *
 
 
 def fetch_rss_entries():
@@ -16,7 +13,7 @@ def fetch_rss_entries():
 
 def extract_full_article(url):
     try:
-        response = requests.get(url, timeout=5)
+        response = requests.get(url, timeout=HTTP_TIMEOUT_SECONDS)
         soup = BeautifulSoup(response.content, 'html.parser')
 
         paragraphs = soup.find_all("p")
@@ -27,7 +24,7 @@ def extract_full_article(url):
         return None
 
 
-def log_article(new_data, log_path="logs/coindesk_news.json"):
+def log_article(new_data, log_path=DEFAULT_LOG_PATH):
     new_data["timestamp"] = datetime.now(timezone.utc).isoformat()
 
     try:
@@ -40,33 +37,3 @@ def log_article(new_data, log_path="logs/coindesk_news.json"):
 
     with open(log_path, "w", encoding="utf-8") as f:
         json.dump(existing_data, f, indent=4, ensure_ascii=False)
-
-
-def main():
-    entries = fetch_rss_entries()
-    producer = get_kafka_producer()
-
-    for entry in entries:
-        full_text = extract_full_article(entry.link)
-
-        if not full_text:
-            continue
-
-        content = full_text
-
-        result = analyze_text(content)
-        data = {
-            "title": entry.title,
-            "link": entry.link,
-            "published": entry.published,
-            "summary": entry.summary,
-            "content": content,
-            "analysis": result
-        }
-
-        log_article(data)
-        # send_to_kafka(producer, 'analyzed_articles', data)
-
-
-if __name__ == "__main__":
-    main()
