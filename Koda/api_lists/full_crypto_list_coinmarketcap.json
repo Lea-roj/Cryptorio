@@ -5965,11 +5965,6 @@
         "slug": "bnb48-club-token"
     },
     {
-        "name": "PancakeSwap",
-        "symbol": "CAKE",
-        "slug": "pancakeswap"
-    },
-    {
         "name": "S.Finance",
         "symbol": "SFG",
         "slug": "s-finance"
@@ -9618,11 +9613,6 @@
         "name": "MAI",
         "symbol": "MIMATIC",
         "slug": "mai"
-    },
-    {
-        "name": "SpiritSwap",
-        "symbol": "SPIRIT",
-        "slug": "spiritswap"
     },
     {
         "name": "Wrapped Fantom",
