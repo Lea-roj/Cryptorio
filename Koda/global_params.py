@@ -1,6 +1,6 @@
 TRUSTED_CRYPTO = {"BTC", "ETH", "SOL", "USDT", "USDC", "BNB", "XRP"}
 REGULATORY_KEYWORDS = {"task force", "commission", "council", "authority", "agency", "committee", "office"}
-
+EXCLUDED_LABELS_FROM_TOPIC_MODELING = {"PERSON", "ORG", "GPE", "DATE", "TIME", "CARDINAL", "ORDINAL"}
 
 # File paths
 CRYPTO_LIST_PATH = "api_lists/full_crypto_list_coinmarketcap.json"
