@@ -17,7 +17,7 @@ def send_to_kafka(producer, topic, data):
 if __name__ == "__main__":
     producer = get_kafka_producer()
 
-    with open("coindesk_news.json", "r", encoding="utf-8") as f:
+    with open("../coindesk_news.json", "r", encoding="utf-8") as f:
         articles = json.load(f)
 
     for article in articles:
